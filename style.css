@@ -52,7 +52,7 @@ html,body{
   position:absolute;
   inset:0;
   pointer-events:none;
-  z-index:1;
+  z-index:6; /* appear in front of the counter but we will avoid overlapping */
 }
 .heart{
   position:absolute;
