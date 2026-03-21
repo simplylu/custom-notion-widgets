@@ -1,0 +1,48 @@
+:root{
+  --bg: #fff;
+  --accent: #ff4da6;
+  --muted: #7a0033;
+}
+html,body{height:100%;margin:0;background:transparent;font-family:system-ui,-apple-system,'Segoe UI',Roboto,Arial}
+#weather-widget{min-width:320px;min-height:120px;padding:14px;box-sizing:border-box}
+.weather-shell{display:block}
+#weather-widget{min-width:420px;max-width:760px;min-height:140px;padding:16px 16px 24px 16px;box-sizing:border-box;position:relative}
+/* refresh button removed */
+.card{position:relative;display:flex;flex-direction:column;gap:8px;align-items:stretch;background:linear-gradient(180deg,#fff0f6,#fff);padding:12px;border-radius:14px;box-shadow:0 10px 36px rgba(255,77,166,0.10);min-height:140px}
+.content{z-index:3;padding:8px 12px;padding-bottom:8px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.current{display:flex;align-items:center;gap:12px;background:transparent;padding:0;white-space:nowrap;flex:0 0 auto;min-width:0}
+.current .left{flex:0 1 auto;text-align:left;min-width:0;max-width:36%}
+.current .center{flex:0 1 auto;text-align:center;color:#9b1650;font-weight:600;min-width:0;max-width:40%;overflow:hidden;text-overflow:ellipsis}
+.current .right{flex:0 0 auto;text-align:right}
+/* prevent stacking: allow truncation with ellipsis */
+.current .left, .current .center {overflow: hidden; text-overflow: ellipsis; white-space: nowrap}
+#city-name{font-weight:800;color:var(--muted);font-size:14px}
+#temp{font-size:20px;font-weight:900;color:var(--accent)}
+#desc{font-size:13px;color:#a12b61;max-width:180px;overflow:hidden;text-overflow:ellipsis}
+.forecast{display:flex;gap:8px;align-items:center;flex:1 1 auto;justify-content:flex-end}
+.forecast{margin-top:0}
+.forecast .day{background:rgba(255,77,166,0.06);padding:6px 8px;border-radius:8px;min-width:48px;text-align:center;font-size:12px;display:flex;flex-direction:column;align-items:center}
+.forecast .day .d{font-size:11px;color:#9b1650}
+.forecast .day .t{font-weight:700;color:var(--accent);margin-top:6px}
+.note{font-size:12px;color:#8a3a5b;margin-top:8px}
+
+@media (max-width:420px){
+  .card{height:auto;padding:10px}
+  #silhouette{height:90px}
+  .current .left, .current .center, .current .right{font-size:13px}
+  .forecast{overflow:auto}
+}
+
+/* silhouette anchored at bottom */
+/* silhouette anchored at bottom without cutting the skyline */
+#silhouette{position:absolute;left:12px;right:12px;bottom:12px;height:100px;border-radius:10px;background:transparent;display:flex;align-items:flex-end;justify-content:center;z-index:1}
+#silhouette img, #silhouette svg{width:100%;height:100%;object-fit:contain;display:block;filter:contrast(0.98) saturate(1.04);object-position:center bottom;transform:translateY(-25%);z-index:1}
+
+/* ensure card bottom padding so silhouette is visible */
+.card{padding-bottom:110px}
+
+/* reduce overlap on small screens */
+@media (max-width:420px){
+  #silhouette img, #silhouette svg{transform:translateY(-15%)}
+  .card{padding-bottom:100px}
+}

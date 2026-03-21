@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>City Weather Widget</title>
+  <link rel="stylesheet" href="weather.css" />
+</head>
+<body>
+  <div id="weather-widget">
+    <div class="card">
+      <div class="content">
+        <!-- single-row, compact weather info -->
+        <div class="current" role="group" aria-label="Current weather">
+          <div class="left">
+            <div id="city-name">—</div>
+          </div>
+          <div class="center">
+            <div id="desc">—</div>
+          </div>
+          <div class="right">
+            <div id="temp">--°C</div>
+          </div>
+        </div>
+        <div id="forecast" class="forecast" aria-hidden="true"></div>
+      </div>
+
+      <div id="silhouette" aria-hidden="true">
+        <!-- City silhouette image anchored at bottom -->
+        <img id="silhouette-img" src="img/malmo.png" alt="city silhouette" />
+      </div>
+    </div>
+  </div>
+
+  <script src="weather.js"></script>
+</body>
+</html>
