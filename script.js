@@ -5,54 +5,60 @@
 
   function updateDays(){
     const now = new Date();
-    // compute difference in local days
-    const diffMs = now.setHours(0,0,0,0) - (new Date(startDate.getFullYear(), startDate.getMonth(), startDate.getDate()).setHours(0,0,0,0));
+    const start = new Date(startDate.getFullYear(), startDate.getMonth(), startDate.getDate());
+    const diffMs = Date.UTC(now.getFullYear(), now.getMonth(), now.getDate()) - Date.UTC(start.getFullYear(), start.getMonth(), start.getDate());
     const days = Math.floor(diffMs / (1000*60*60*24));
     daysEl.textContent = String(days);
   }
 
   function spawnHeart(){
+    // keep number of hearts modest
+    if(heartsContainer.children.length >= 6) return;
+
+    const emojis = ['💕','💖','💘','💓','💞','💗','💝','❣️', '🫦'];
     const s = document.createElement('span');
     s.className = 'heart';
-    s.textContent = Math.random() > 0.5 ? '💕' : '💕';
+    s.textContent = emojis[Math.floor(Math.random()*emojis.length)];
     if(Math.random() > 0.5) s.classList.add('mirrored');
 
-    const size = 16 + Math.floor(Math.random()*36); // 16-52px
+    const size = 18 + Math.floor(Math.random()*28); // 18-46px
     s.style.fontSize = size + 'px';
 
-    const left = Math.random() * 100; // percent
+    // horizontal placement across widget but not too close to edges
+    const left = 6 + Math.random()*88; // 6% - 94%
     s.style.left = left + '%';
 
-    const duration = 4000 + Math.floor(Math.random()*7000); // 4s-11s
-    s.style.animationDuration = (duration/1000) + 's';
+    // vertical band: centered counter is at ~50% — allow -20%..+20%
+    const top = 50 + (Math.random()*40 - 20); // 30% - 70%
+    s.style.top = top + '%';
 
-    // slight horizontal drift using transform during animation
-    const drift = (Math.random() - 0.5) * 40; // -20 to 20 px
-    s.style.setProperty('--drift', drift + 'px');
+    // small horizontal drift via margin-left (so animation transform can be translateY only)
+    const drift = Math.floor(Math.random()*41 - 20); // -20..20 px
+    s.style.marginLeft = drift + 'px';
+
+    // how much the heart will rise (negative px)
+    const rise = -(30 + Math.floor(Math.random()*50)); // -30 to -79px
+    s.style.setProperty('--rise', rise + 'px');
+
+    const duration = 3500 + Math.floor(Math.random()*5000); // 3.5s-8.5s (slightly faster)
+    s.style.animationDuration = (duration/1000) + 's';
 
     heartsContainer.appendChild(s);
 
-    // remove after animation
-    setTimeout(()=>{
-      s.remove();
-    }, duration+200);
+    setTimeout(() => { s.remove(); }, duration + 250);
   }
 
-  // make hearts float with slight CSS transform for drift
-  // inject small stylesheet tweak to use --drift variable inside transform
-  const style = document.createElement('style');
-  style.textContent = '.heart{ transform: translateX(var(--drift,0px)); } .heart[style] { /* allow inline */ }';
-  document.head.appendChild(style);
-
-  // initial population
-  for(let i=0;i<8;i++){
-    setTimeout(spawnHeart, i*350);
+  // initial gentle population (a bit more present)
+  for(let i=0;i<6;i++){
+    setTimeout(spawnHeart, i*300);
   }
 
-  // spawn periodically
-  setInterval(spawnHeart, 700);
+  // schedule spawns with a variable (faster) rate — still capped
+  (function schedule(){
+    const delay = 900 + Math.random()*1100; // 0.9s - 2.0s
+    setTimeout(()=>{ spawnHeart(); schedule(); }, delay);
+  })();
 
-  // update days now and every minute (keeps day accurate across midnight)
   updateDays();
   setInterval(updateDays, 60*1000);
 

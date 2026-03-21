@@ -63,15 +63,16 @@ html,body{
   opacity:0;
   animation-name:floatUp;
   animation-timing-function:linear;
+  pointer-events:none;
 }
 .mirrored{
   transform:scaleX(-1);
 }
 @keyframes floatUp{
-  0%{ transform:translateY(40px) scale(1); opacity:0 }
+  0%{ transform:translateY(0) scale(1); opacity:0 }
   8%{ opacity:1 }
-  60%{ transform:translateY(-160px) scale(1.02); opacity:0.9 }
-  100%{ transform:translateY(-260px) scale(0.98); opacity:0 }
+  80%{ transform:translateY(var(--rise,-80px)) scale(1.02); opacity:0.9 }
+  100%{ transform:translateY(calc(var(--rise,-80px) - 10px)) scale(0.98); opacity:0 }
 }
 
 /* Make widget look good when embedded in small frames */
