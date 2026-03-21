@@ -8,6 +8,7 @@
     malmo: {lat: 55.6050, lon: 13.0038, label: 'Malmö', img: 'img/malmo.png'},
     goettingen: {lat: 51.5413, lon: 9.9158, label: 'Göttingen', img: 'img/gottingen.png'},
     trier: {lat: 49.7499, lon: 6.6371, label: 'Trier', img: 'img/trier.png'},
+      amsterdam: {lat: 52.3676, lon: 4.9041, label: 'Amsterdam', img: 'img/amsterdam.png'},
   };
 
   function weatherCodeToEmoji(code){
