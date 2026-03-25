@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   // audio elements and control buttons
   const wordPlayer = document.getElementById('audio-player-word');
   const btnWord = document.getElementById('play-word');
-  const imageEl = document.getElementById('word-image');
+    let imageEl = document.getElementById('word-image');
 
   // try loading words.json from same directory; no embedded fallback
 
@@ -65,114 +65,110 @@ document.addEventListener('DOMContentLoaded', async () => {
     return entry;
   }
 
-  const entry = await loadEntry();
+  let entry = null;
 
-  // populate the word card (first .flip-card with data-role=word)
   const wordCard = document.querySelector('.flip-card[data-role="word"]');
-  if (wordCard) {
-    wordCard.querySelector('.flip-card-front .word').textContent = entry.word;
-    wordCard.querySelector('.flip-card-front .sample').textContent = entry.sampleSv;
-    wordCard.querySelector('.flip-card-back .word').textContent = entry.de;
-    wordCard.querySelector('.flip-card-back .sample').textContent = entry.sampleDe;
-  }
 
-  // single card holds both word and sample (front/back)
-
-  // set image and audio sources
-  if (imageEl) {
-    // Inline external SVG and recolor it so individual files need not be edited.
-    (async () => {
-      try {
-        const imgPath = `img/${sanitizeFilename(entry.category || entry.word)}.svg`;
-        const res = await fetch(imgPath, { cache: 'no-store' });
-        if (!res.ok) {
-          imageEl.src = imgPath;
-          return;
-        }
-        const svgText = await res.text();
-        const parser = new DOMParser();
-        const doc = parser.parseFromString(svgText, 'image/svg+xml');
-        const svg = doc.querySelector('svg');
-        if (!svg) {
-          imageEl.src = imgPath;
-          return;
-        }
-
-        // Remove large/full-size background rects so the SVG has no own background
-        try {
-          const vb = (svg.getAttribute('viewBox') || '').trim().split(/\s+/);
-          let vbW = vb.length === 4 ? parseFloat(vb[2]) : null;
-          let vbH = vb.length === 4 ? parseFloat(vb[3]) : null;
-          if ((!vbW || !vbH) && svg.getAttribute('width') && svg.getAttribute('height')) {
-            const w = svg.getAttribute('width').replace(/px$/, '');
-            const h = svg.getAttribute('height').replace(/px$/, '');
-            vbW = vbW || parseFloat(w) || null;
-            vbH = vbH || parseFloat(h) || null;
-          }
-
-          const rects = Array.from(svg.querySelectorAll('rect'));
-          rects.forEach((r) => {
-            const f = (r.getAttribute('fill') || '').toLowerCase();
-            const id = (r.id || '').toLowerCase();
-            const cls = (r.getAttribute('class') || '').toLowerCase();
-            const style = (r.getAttribute('style') || '').toLowerCase();
-
-            // heuristics: remove rects that look like backgrounds
-            const looksLikeBg = id.includes('bg') || cls.includes('bg') || style.includes('background');
-
-            const rx = parseFloat(r.getAttribute('x') || '0');
-            const ry = parseFloat(r.getAttribute('y') || '0');
-            const rw = parseFloat(r.getAttribute('width') || '0');
-            const rh = parseFloat(r.getAttribute('height') || '0');
-
-            const coversView = vbW && vbH && (Math.abs(rx) <= 1 && Math.abs(ry) <= 1 && rw >= vbW * 0.9 && rh >= vbH * 0.9);
-
-            if (looksLikeBg || coversView) {
-              r.remove();
-            }
-          });
-        } catch (e) {
-          // if anything goes wrong, ignore and continue
-        }
-
-        // Recolor gradient stops (if present) to a lila variant
-        const stops = svg.querySelectorAll('stop');
-        if (stops && stops.length) {
-          stops.forEach((s, i) => {
-            s.setAttribute('stop-color', i === 0 ? '#f6eef9' : '#f0d8f0');
-          });
-        }
-
-        // Target color (darker lila-pink)
-        const newFill = '#b1538f';
-
-        // Replace explicit fills (but keep gradient references)
-        svg.querySelectorAll('[fill]').forEach((el) => {
-          const f = el.getAttribute('fill');
-          if (!f) return;
-          if (f.startsWith('url(')) return;
-          if (f === 'none') return;
-          el.setAttribute('fill', newFill);
-        });
-
-        // Ensure common shape/text elements get the new fill if not set
-        svg.querySelectorAll('path,circle,rect,ellipse,text').forEach((el) => {
-          if (!el.getAttribute('fill')) el.setAttribute('fill', newFill);
-        });
-
-        svg.setAttribute('width', '100%');
-        svg.setAttribute('height', '100%');
-        svg.style.display = 'block';
-        svg.style.background = 'transparent';
-
-        imageEl.replaceWith(svg);
-      } catch (err) {
-        // Fallback to using the image src directly
-        const imgPath = `img/${sanitizeFilename(entry.category || entry.word)}.svg`;
+  async function inlineImageForEntry(e) {
+    // refresh reference in case DOM replaced it previously
+    imageEl = document.getElementById('word-image');
+    if (!imageEl) return;
+    try {
+      const imgPath = `img/${sanitizeFilename(e.category || e.word)}.svg`;
+      const res = await fetch(imgPath, { cache: 'no-store' });
+      if (!res.ok) {
         imageEl.src = imgPath;
+        return;
       }
-    })();
+      const svgText = await res.text();
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(svgText, 'image/svg+xml');
+      const svg = doc.querySelector('svg');
+      if (!svg) {
+        imageEl.src = imgPath;
+        return;
+      }
+
+      try {
+        const vb = (svg.getAttribute('viewBox') || '').trim().split(/\s+/);
+        let vbW = vb.length === 4 ? parseFloat(vb[2]) : null;
+        let vbH = vb.length === 4 ? parseFloat(vb[3]) : null;
+        if ((!vbW || !vbH) && svg.getAttribute('width') && svg.getAttribute('height')) {
+          const w = svg.getAttribute('width').replace(/px$/, '');
+          const h = svg.getAttribute('height').replace(/px$/, '');
+          vbW = vbW || parseFloat(w) || null;
+          vbH = vbH || parseFloat(h) || null;
+        }
+
+        const rects = Array.from(svg.querySelectorAll('rect'));
+        rects.forEach((r) => {
+          const id = (r.id || '').toLowerCase();
+          const cls = (r.getAttribute('class') || '').toLowerCase();
+          const style = (r.getAttribute('style') || '').toLowerCase();
+          const looksLikeBg = id.includes('bg') || cls.includes('bg') || style.includes('background');
+          const rx = parseFloat(r.getAttribute('x') || '0');
+          const ry = parseFloat(r.getAttribute('y') || '0');
+          const rw = parseFloat(r.getAttribute('width') || '0');
+          const rh = parseFloat(r.getAttribute('height') || '0');
+          const coversView = vbW && vbH && (Math.abs(rx) <= 1 && Math.abs(ry) <= 1 && rw >= vbW * 0.9 && rh >= vbH * 0.9);
+          if (looksLikeBg || coversView) r.remove();
+        });
+      } catch (err) {/* ignore */}
+
+      const stops = svg.querySelectorAll('stop');
+      if (stops && stops.length) {
+        stops.forEach((s, i) => { s.setAttribute('stop-color', i === 0 ? '#f6eef9' : '#f0d8f0'); });
+      }
+
+      const newFill = '#b1538f';
+      svg.querySelectorAll('[fill]').forEach((el) => {
+        const f = el.getAttribute('fill');
+        if (!f) return;
+        if (f.startsWith('url(')) return;
+        if (f === 'none') return;
+        el.setAttribute('fill', newFill);
+      });
+      svg.querySelectorAll('path,circle,rect,ellipse,text').forEach((el) => {
+        if (!el.getAttribute('fill')) el.setAttribute('fill', newFill);
+      });
+
+      svg.setAttribute('width', '100%');
+      svg.setAttribute('height', '100%');
+      svg.style.display = 'block';
+      svg.style.background = 'transparent';
+        // preserve id so future calls can find the element
+        svg.id = 'word-image';
+        imageEl.replaceWith(svg);
+        imageEl = svg;
+    } catch (err) {
+      const imgPath = `img/${sanitizeFilename(e.category || e.word)}.svg`;
+      imageEl.src = imgPath;
+    }
   }
+
+  function applyEntryToDOM(e) {
+    entry = e || { word: '', de: '', sampleSv: '', sampleDe: '' };
+    if (wordCard) {
+      const fWord = wordCard.querySelector('.flip-card-front .word');
+      const fSample = wordCard.querySelector('.flip-card-front .sample');
+      const bWord = wordCard.querySelector('.flip-card-back .word');
+      const bSample = wordCard.querySelector('.flip-card-back .sample');
+      if (fWord) fWord.textContent = entry.word;
+      if (fSample) fSample.textContent = entry.sampleSv;
+      if (bWord) bWord.textContent = entry.de;
+      if (bSample) bSample.textContent = entry.sampleDe;
+    }
+    // set image and audio (image inlining async)
+    inlineImageForEntry(entry);
+    // refresh audio lookup
+    pickAudioFile();
+  }
+
+  // initial load
+  (async () => {
+    const first = await loadEntry();
+    applyEntryToDOM(first);
+  })();
   // Build a normalized filename for the word audio (e.g. kärlek -> karlek.mp3)
   function sanitizeFilename(name) {
     if (!name) return 'word';
@@ -284,6 +280,20 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   // Play when clicking designated buttons
   btnWord.addEventListener('click', () => { playAudio(wordPlayer, btnWord); });
+
+  // reload button: load another random word+audio+svg
+  const reloadBtn = document.getElementById('reload-word');
+  if (reloadBtn) {
+    reloadBtn.addEventListener('click', async () => {
+      try {
+        reloadBtn.disabled = true;
+        const next = await loadEntry();
+        applyEntryToDOM(next);
+      } finally {
+        reloadBtn.disabled = false;
+      }
+    });
+  }
 
   // clicking the card plays the word audio; hover emits hearts
   document.querySelectorAll('.flip-card').forEach(card => {
