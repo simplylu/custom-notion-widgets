@@ -1,0 +1,810 @@
+[
+  {
+    "active": true,
+    "category": "numbers",
+    "word": "tjugo",
+    "de": "zwanzig",
+    "sampleSv": "Vi behöver tjugo minuter till.",
+    "sampleDe": "Wir brauchen noch zwanzig Minuten."
+  },
+  {
+    "active": true,
+    "category": "sex",
+    "word": "läppar",
+    "de": "Lippen",
+    "sampleSv": "Jag vill känna dina läpparna överallt på min kropp, men just nu tänker jag mest på hur de skulle kännas mellan mina ben.",
+    "sampleDe": "Ich will deine Lippen überall auf meinem Körper spüren, aber gerade denke ich am meisten daran, wie sie sich zwischen meinen Beinen anfühlen würden."
+  },
+  {
+    "active": true,
+    "category": "sex",
+    "word": "grepp",
+    "de": "Griff",
+    "sampleSv": "Tänk på hur mitt grepp om din hals blir hårdare ju mer du stönar.",
+    "sampleDe": "Stell dir vor, wie mein Griff um deinen Hals fester wird, je mehr du stöhnst."
+  },
+  {
+    "active": true,
+    "category": "sex",
+    "word": "tunga",
+    "de": "Zunge",
+    "sampleSv": "Jag vill att du tänker på min tunga just nu. Hur den sakta, sakta rör sig precis där du vill att den ska vara.",
+    "sampleDe": "Ich will, dass du jetzt an meine Zunge denkst. Wie sie sich langsam, ganz langsam genau dort bewegt, wo du sie haben willst."
+  },
+  {
+    "active": true,
+    "category": "sex",
+    "word": "kläder",
+    "de": "Kleidung",
+    "sampleSv": "Tänk dig att jag drar av dig dina kläder, bit för bit, medan jag kysser varje centimeter hud som blir bar.",
+    "sampleDe": "Stell dir vor, wie ich dir deine Kleidung Stück für Stück ausziehe, während ich jeden Zentimeter Haut, der frei wird, küsse."
+  },
+  {
+    "active": true,
+    "category": "sex",
+    "word": "hud",
+    "de": "Haut",
+    "sampleSv": "Din hud känns så jävla mjuk när jag drar mina naglar lätt över den.",
+    "sampleDe": "Deine Haut fühlt sich so verdammt weich an, wenn ich meine Nägel leicht darüberziehe."
+  },
+  {
+    "active": true,
+    "category": "sex",
+    "word": "känslan",
+    "de": "Gefühl",
+    "sampleSv": "Känslan av att vara helt nära dig, hud mot hud, utan något emellan. Ingenting slår det.",
+    "sampleDe": "Das Gefühl, ganz nah bei dir zu sein, Haut an Haut, ohne etwas dazwischen. Nichts schlägt das."
+  },
+  {
+    "active": true,
+    "category": "sex",
+    "word": "makten",
+    "de": "Macht",
+    "sampleSv": "Jag älskar känslan av att ha makten över dig, men ännu mer älskar jag när du tar den tillbaka.",
+    "sampleDe": "Ich liebe das Gefühl, Macht über dich zu haben, aber noch mehr liebe ich es, wenn du sie dir zurücknimmst."
+  },
+  {
+    "active": true,
+    "category": "sex",
+    "word": "begär",
+    "de": "Verlangen",
+    "sampleSv": "Ditt begär efter mig gör mig helt galen.",
+    "sampleDe": "Dein Verlangen nach mir macht mich komplett verrückt."
+  },
+  {
+    "active": true,
+    "category": "sex",
+    "word": "kyssar",
+    "de": "Küsse",
+    "sampleSv": "Dina kyssar längs min hals får mig att darra.",
+    "sampleDe": "Deine Küsse entlang meines Halses lassen mich zittern."
+  },
+  {
+    "active": true,
+    "category": "sex",
+    "word": "händer",
+    "de": "Hände",
+    "sampleSv": "Dina händer på min kropp är som eld.",
+    "sampleDe": "Deine Hände auf meinem Körper sind wie Feuer."
+  },
+  {
+    "active": true,
+    "category": "sex",
+    "word": "ögonkontakt",
+    "de": "Augenkontakt",
+    "sampleSv": "När vi har ögonkontakt medan vi rör oss tillsammans, känns det som att ingenting annat existerar.",
+    "sampleDe": "Wenn wir Augenkontakt haben, während wir uns zusammen bewegen, fühlt es sich an, als würde nichts anderes existieren."
+  },
+  {
+    "active": true,
+    "category": "sex",
+    "word": "röst",
+    "de": "Stimme",
+    "sampleSv": "Din röst när du är upphetsad är det sexigaste jag vet. Jag vill höra den hela tiden.",
+    "sampleDe": "Deine Stimme, wenn du erregt bist, ist das Sexyste, das ich kenne. Ich will sie die ganze Zeit hören."
+  },
+  {
+    "active": true,
+    "category": "sex",
+    "word": "lita",
+    "de": "vertrauen",
+    "sampleSv": "När jag ger mig hän åt dig helt och hållet, känns det som att jag flyter. Vet du hur mycket jag litar på dig?",
+    "sampleDe": "Wenn ich mich dir ganz und gar hingebe, fühlt es sich an, als würde ich fliegen. Weißt du, wie sehr ich dir vertraue?"
+  },
+  {
+    "active": true,
+    "category": "sex",
+    "word": "håller",
+    "de": "halten",
+    "sampleSv": "Jag vill att du håller fast mig så att jag inte kan röra mig, medan du gör precis vad du vill med mig.",
+    "sampleDe": "Ich will, dass du mich so festhältst, dass ich mich nicht bewegen kann, während du mit mir machst, was du willst."
+  },
+  {
+    "active": true,
+    "category": "sex",
+    "word": "leda",
+    "de": "führen",
+    "sampleSv": "Jag älskar när du leder mig, när du visar mig exakt hur du vill ha mig. Det gör mig så jävla våt.",
+    "sampleDe": "Ich liebe es, wenn du mich führst, wenn du mir genau zeigst, wie du mich haben willst. Das macht mich so verdammt nass."
+  },
+  {
+    "active": true,
+    "category": "sex",
+    "word": "bett",
+    "de": "beißen",
+    "sampleSv": "Tänk på hur jag bett dig lätt i nacken.",
+    "sampleDe": "Stell dir vor, wie ich dich leicht in den Nacken beiße."
+  },
+  {
+    "active": true,
+    "category": "sex",
+    "word": "tvinga",
+    "de": "zwingen",
+    "sampleSv": "Jag vill att du tvingar mig att komma, att jag inte har något val. Vet du hur mycket jag behöver det ibland?",
+    "sampleDe": "Ich will, dass du mich zwingst zu kommen, dass ich keine Wahl habe. Weißt du, wie sehr ich das manchmal brauche?"
+  },
+  {
+    "active": true,
+    "category": "sex",
+    "word": "utforska",
+    "de": "erkunden",
+    "sampleSv": "Jag vill att du utforskar varje del av mig, som om du lär känna mig på nytt varje gång.",
+    "sampleDe": "Ich will, dass du jeden Teil von mir erkundest, als würdest du mich jedes Mal neu kennenlernen."
+  },
+  {
+    "active": true,
+    "category": "sex",
+    "word": "knuffa",
+    "de": "schubsen",
+    "sampleSv": "Jag vill att du knuffar mig ner på sängen och visar mig vem som bestämmer. Du vet hur mycket jag älskar det.",
+    "sampleDe": "Ich will, dass du mich aufs Bett schubst und mir zeigst, wer hier das Sagen hat. Du weißt, wie sehr ich das liebe."
+  },
+  {
+    "active": true,
+    "category": "sex",
+    "word": "kontroll",
+    "de": "Kontrolle",
+    "sampleSv": "Tänk dig att jag binder fast dina handleder och visar dig hur mycket kontroll jag har. Du skulle älska det, eller hur?",
+    "sampleDe": "Stell dir vor, ich binde deine Handgelenke fest und zeige dir, wie viel Kontrolle ich habe. Du würdest es lieben, oder?"
+  },
+  {
+    "active": true,
+    "category": "sex",
+    "word": "sovrum",
+    "de": "Schlafzimmer",
+    "sampleSv": "Jag vill att du drar med mig in i sovrummet och visar mig exakt vad du tänker göra med mig.",
+    "sampleDe": "Ich will, dass du mich ins Schlafzimmer ziehst und mir genau zeigst, was du mit mir vorhast."
+  },
+  {
+    "active": true,
+    "category": "sex",
+    "word": "leka",
+    "de": "spielen",
+    "sampleSv": "Jag vill att du leker med mig, att du testar gränserna och ser hur långt jag kan gå för dig.",
+    "sampleDe": "Ich will, dass du mit mir spielst, dass du die Grenzen austestest und siehst, wie weit ich für dich gehen kann."
+  },
+  {
+    "active": true,
+    "category": "sex",
+    "word": "kittlar",
+    "de": "kitzeln",
+    "sampleSv": "Jag skulle kittla dig precis där du är som känsligast, tills du stönar av njutning.",
+    "sampleDe": "Ich würde dich genau dort kitzeln, wo du am empfindlichsten bist, bis du vor Lust stöhnst."
+  },
+  {
+    "active": true,
+    "category": "sex",
+    "word": "belönar",
+    "de": "belohnen",
+    "sampleSv": "Om du är en bra flicka och gör precis som jag säger, ska jag belöna dig.",
+    "sampleDe": "Wenn du ein braves Mädchen bist und genau das tust, was ich sage, werde ich dich belohnen."
+  },
+  {
+    "active": true,
+    "category": "sex",
+    "word": "straff",
+    "de": "Strafe",
+    "sampleSv": "Men om du inte lyssnar... då får du känna på mitt straff.",
+    "sampleDe": "Aber wenn du nicht hörst... dann wirst du meine Strafe zu spüren bekommen."
+  },
+  {
+    "active": true,
+    "category": "sex",
+    "word": "drömmer",
+    "de": "träumen",
+    "sampleSv": "Jag vill att du drömmer om mig ikväll. Om mina händer, mina läppar, och allt vi ska göra när vi ses igen.",
+    "sampleDe": "Ich will, dass du heute Nacht von mir träumst. Von meinen Händen, meinen Lippen und allem, was wir tun werden, wenn wir uns wiedersehen."
+  },
+  {
+    "active": true,
+    "category": "tonguetwister",
+    "word": "sju",
+    "de": "sieben",
+    "sampleSv": "Sju sjuksköterskor skötte sjuttiosju sjösjuka sjömän.",
+    "sampleDe": "Sieben Krankenschwestern pflegten siebenundsiebzig seekranke Seemänner."
+  },
+  {
+    "active": true,
+    "category": "tonguetwister",
+    "word": "laxar",
+    "de": "Lachse",
+    "sampleSv": "Sex vaxade laxar i en vaxad laxask.",
+    "sampleDe": "Sechs gewachste Lachse in einer gewachsten Lachsschachtel."
+  },
+  {
+    "active": true,
+    "category": "tonguetwister",
+    "word": "fisk",
+    "de": "Fisch",
+    "sampleSv": "Fiskarens Frits fiska färsk fisk.",
+    "sampleDe": "Fischers Fritz fischt frischen Fisch."
+  },
+  {
+    "active": true,
+    "category": "tonguetwister",
+    "word": "fluga",
+    "de": "Fliege",
+    "sampleSv": "Flyg, fula fluga, flyg! Och den fula flugan flög.",
+    "sampleDe": "Flieg, hässliche Fliege, flieg! Und die hässliche Fliege flog."
+  },
+  {
+    "active": true,
+    "category": "tonguetwister",
+    "word": "fem",
+    "de": "fünf",
+    "sampleSv": "Fem flatta flundror på ett flatt fat.",
+    "sampleDe": "Fünf flache Flundern auf einer flachen Platte."
+  },
+  {
+    "active": true,
+    "category": "tonguetwister",
+    "word": "koka",
+    "de": "kochen",
+    "sampleSv": "Stekt torsk, kokt torsk.",
+    "sampleDe": "Gebratener Dorsch, gekochter Dorsch."
+  },
+  {
+    "active": true,
+    "category": "tonguetwister",
+    "word": "bada",
+    "de": "baden",
+    "sampleSv": "Barabaras bror badade bara i Barsebäck.",
+    "sampleDe": "Barbaras Bruder badete nur in Barsebäck."
+  },
+  {
+    "active": true,
+    "category": "tonguetwister",
+    "word": "tre",
+    "de": "drei",
+    "sampleSv": "Ett pepparkorn i en kopparpanna, två pepparkorn i en kopparpanna, tre pepparkorn i en kopparpanna...",
+    "sampleDe": "Ein Pfefferkorn im Kupferkessel, zwei Pfefferkörner im Kupferkessel, drei Pfefferkörner im Kupferkessel..."
+  },
+  {
+    "active": true,
+    "category": "tonguetwister",
+    "word": "åtta",
+    "de": "acht",
+    "sampleSv": "Packa pappas kappsäck med åtta pepparkorn.",
+    "sampleDe": "Packe Papas Handkoffer mit acht Pfefferkörnern."
+  },
+  {
+    "active": true,
+    "category": "tonguetwister",
+    "word": "knut",
+    "de": "Knoten",
+    "sampleSv": "Knut satt vid en knut och knöt en knut. När Knut knutit knuten var knuten knuten.",
+    "sampleDe": "Knut saß in der Ecke und knüpfte einen Knoten. Als Knut den Knoten geknüpft hatte, war der Knoten geknüpft."
+  },
+  {
+    "active": true,
+    "category": "tonguetwister",
+    "word": "kalt",
+    "de": "kalt",
+    "sampleSv": "Dessa dagar kan man inte kalla kalla, de borde heta heta.",
+    "sampleDe": "In diesen Tagen kann man nicht kalt sagen, sie sollten heiß genannt werden."
+  },
+  {
+    "active": true,
+    "category": "tonguetwister",
+    "word": "får",
+    "de": "Schaf",
+    "sampleSv": "Farfar, får får får? Nej, får får inte får, får får lamm.",
+    "sampleDe": "Großvater, bekommen Schafe Schafe? Nein, Schafe bekommen keine Schafe, Schafe bekommen Lämmer."
+  },
+  {
+    "active": true,
+    "category": "tonguetwister",
+    "word": "såg",
+    "de": "sehen",
+    "sampleSv": "Jag såg en såg och vart jag såg så såg jag bara såg vid såg.",
+    "sampleDe": "Ich sah eine Säge und wo ich die Säge sah, sah ich nur Säge bei Säge."
+  },
+  {
+    "active": true,
+    "category": "tonguetwister",
+    "word": "frisk",
+    "de": "frisch",
+    "sampleSv": "Fantastiskt friskt västkustskt kvistfritt kvastskaft.",
+    "sampleDe": "Phantastischer frischer, astfreier Besenstiel von der Westküste."
+  },
+  {
+    "active": true,
+    "category": "tonguetwister",
+    "word": "skjort",
+    "de": "Hemd",
+    "sampleSv": "Skölj sju skitiga skjortor i sjön.",
+    "sampleDe": "Spüle sieben dreckige Hemden im See."
+  },
+  {
+    "active": true,
+    "category": "tonguetwister",
+    "word": "sittar",
+    "de": "sitzen",
+    "sampleSv": "Visst måste Mats sitta sist.",
+    "sampleDe": "Natürlich muss Mats hinten sitzen."
+  },
+  {
+    "active": true,
+    "category": "tonguetwister",
+    "word": "samla",
+    "de": "sammeln",
+    "sampleSv": "Sotaren Selma samlar semlor. Se så många semlor Selma samlat.",
+    "sampleDe": "Selma, die Schornsteinfegerin, sammelt Semmeln. Schau, wie viele Semmeln Selma gesammelt hat."
+  },
+  {
+    "active": true,
+    "category": "tonguetwister",
+    "word": "grön",
+    "de": "grün",
+    "sampleSv": "Den gröna hönan gröpte gröt. Grön blev hönans gröt.",
+    "sampleDe": "Die grüne Henne schöpfte Brei. Grün wurde der Brei der Henne."
+  },
+  {
+    "active": true,
+    "category": "tonguetwister",
+    "word": "cyklar",
+    "de": "radeln",
+    "sampleSv": "Cecilia cyklade genom centrala Cypern efter cigaretter och citroner.",
+    "sampleDe": "Cecilia radelte durch das zentrale Zypern nach Zigaretten und Zitronen."
+  },
+  {
+    "active": true,
+    "category": "pickup",
+    "word": "försvinna",
+    "de": "verschwinden",
+    "sampleSv": "Är du en trollkarl? För varje gång jag tittar på dig försvinner allt annat.",
+    "sampleDe": "Bist du ein Zauberer? Denn jedes Mal, wenn ich dich anschaue, verschwindet alles andere."
+  },
+  {
+    "active": true,
+    "category": "pickup",
+    "word": "trött",
+    "de": "müde",
+    "sampleSv": "Du måste vara trött, för du har sprungit i mina tankar hela dagen.",
+    "sampleDe": "Du musst müde sein, denn du bist den ganzen Tag in meinen Gedanken herumgelaufen."
+  },
+  {
+    "active": true,
+    "category": "pickup",
+    "word": "lova",
+    "de": "versprechen",
+    "sampleSv": "Kan jag bjuda dig på en fika? Jag lovar att jag är bättre än kaffe.",
+    "sampleDe": "Darf ich dich auf einen Kaffee einladen? Ich verspreche, ich bin besser als Kaffee."
+  },
+  {
+    "active": true,
+    "category": "pickup",
+    "word": "tycker",
+    "de": "mögen",
+    "sampleSv": "Jag tycker om ditt leende, det gör min dag bättre.",
+    "sampleDe": "Ich mag dein Lächeln, es macht meinen Tag besser."
+  },
+  {
+    "active": true,
+    "category": "pickup",
+    "word": "bättre",
+    "de": "besser",
+    "sampleSv": "Får jag lära känna dig bättre?",
+    "sampleDe": "Darf ich dich besser kennenlernen?"
+  },
+  {
+    "active": true,
+    "category": "pickup",
+    "word": "intressant",
+    "de": "interessant",
+    "sampleSv": "Du verkar vara en intressant person, kan vi prata mer?",
+    "sampleDe": "Du scheinst eine interessante Person zu sein, können wir mehr reden?"
+  },
+  {
+    "word": "sakna",
+    "de": "vermissen",
+    "sampleSv": "Jag saknar dig redan, fast vi var tillsammans för bara en timme sedan.",
+    "sampleDe": "Ich vermisse dich schon, obwohl wir erst vor einer Stunde zusammen waren.",
+    "active": true,
+    "category": "love"
+  },
+  {
+    "word": "kram",
+    "de": "Umarmung",
+    "sampleSv": "En kram från dig kan fixa även min sämsta dag.",
+    "sampleDe": "Eine Umarmung von dir kann selbst meinen schlechtesten Tag retten.",
+    "active": true,
+    "category": "love"
+  },
+  {
+    "word": "morgonpuss",
+    "de": "Guten-Morgen-Kuss",
+    "sampleSv": "Att vakna upp till en morgonpuss från dig är det bästa sättet att börja dagen.",
+    "sampleDe": "Aufzuwachen und einen Guten-Morgen-Kuss von dir zu bekommen, ist die beste Art, den Tag zu beginnen.",
+    "active": true,
+    "category": "love"
+  },
+  {
+    "word": "älskling",
+    "de": "Schatz",
+    "sampleSv": "Hej, min älskling, du är så himla söt när du somnar med huvudet i mitt knä.",
+    "sampleDe": "Hey, meine Süße, du bist so verdammt süß, wenn du mit dem Kopf auf meinem Schoß einschläfst.",
+    "active": true,
+    "category": "love"
+  },
+  {
+    "word": "mysa",
+    "de": "gemütlich sein",
+    "sampleSv": "Kan vi inte bara mysa hela dagen idag? Jag vill inte göra någonting annat.",
+    "sampleDe": "Können wir nicht einfach den ganzen Tag gemütlich sein? Ich will nichts anderes tun.",
+    "active": true,
+    "category": "love"
+  },
+  {
+    "word": "hemma",
+    "de": "zu Hause",
+    "sampleSv": "Älskling, du är den enda som får mig att känna mig helt hemma.",
+    "sampleDe": "Schatz, du bist die Einzige, die mich ganz zu Hause fühlen lässt.",
+    "active": true,
+    "category": "love"
+  },
+  {
+    "word": "hjärtklappning",
+    "de": "Herzklopfen",
+    "sampleSv": "Varje gång jag ser dig får jag hjärtklappning, som första gången.",
+    "sampleDe": "Jedes Mal, wenn ich dich sehe, bekomme ich Herzklopfen, wie beim ersten Mal.",
+    "active": true,
+    "category": "love"
+  },
+  {
+    "word": "kärleksbrev",
+    "de": "Liebesbrief",
+    "sampleSv": "Jag skrev ett kärleksbrev till dig igår, men det blev bara en massa kladd. Får ge det till dig ändå?",
+    "sampleDe": "Ich habe dir gestern einen Liebesbrief geschrieben, aber es wurde nur ein wirres Gekritzel. Darf ich ihn dir trotzdem geben?",
+    "active": true,
+    "category": "love"
+  },
+  {
+    "word": "somna",
+    "de": "einschlafen",
+    "sampleSv": "Att somna med dig bredvid mig är den bästa känslan i världen.",
+    "sampleDe": "Mit dir neben mir einzuschlafen ist das beste Gefühl der Welt.",
+    "active": true,
+    "category": "love"
+  },
+  {
+    "word": "puss",
+    "de": "Kuss",
+    "sampleSv": "Du ger mig alltid en puss på näsan när jag är ledsen. Det får mig att må bättre direkt.",
+    "sampleDe": "Du gibst mir immer einen Kuss auf die Nase, wenn ich traurig bin. Das macht mich sofort besser gelaunt.",
+    "active": true,
+    "category": "love"
+  },
+  {
+    "word": "handla",
+    "de": "einkaufen",
+    "sampleSv": "Jag älskar att hålla i din hand, även om det bara är när vi går och handlar.",
+    "sampleDe": "Ich liebe es, deine Hand zu halten, selbst wenn es nur beim Einkaufen ist.",
+    "active": true,
+    "category": "love"
+  },
+  {
+    "word": "gosa",
+    "de": "kuscheln",
+    "sampleSv": "Kan vi inte bara gosa hela kvällen? Filmen kan vänta.",
+    "sampleDe": "Können wir nicht einfach den ganzen Abend kuscheln? Der Film kann warten.",
+    "active": true,
+    "category": "love"
+  },
+  {
+    "word": "betyder",
+    "de": "bedeuten",
+    "sampleSv": "Du är min, och jag är din, och det är allt som betyder någonting.",
+    "sampleDe": "Du bist mein, und ich bin dein, und das ist alles, was zählt.",
+    "active": true,
+    "category": "love"
+  },
+  {
+    "word": "kärleksfull",
+    "de": "liebevoll",
+    "sampleSv": "Du är så kärleksfull, även när jag är jobbig. Det är därför jag älskar dig.",
+    "sampleDe": "Du bist so liebevoll, selbst wenn ich schwierig bin. Deshalb liebe ich dich.",
+    "active": true,
+    "category": "love"
+  },
+  {
+    "word": "stund",
+    "de": "Moment",
+    "sampleSv": "Jag skulle ge allt för en liten stund med dig just nu.",
+    "sampleDe": "Ich würde alles geben für einen kleinen Moment mit dir gerade jetzt.",
+    "active": true,
+    "category": "love"
+  },
+  {
+    "word": "vacker",
+    "de": "schön",
+    "sampleSv": "Du är vacker även när du precis vaknat och har hår som står åt alla håll.",
+    "sampleDe": "Du bist schön, selbst wenn du gerade aufgewacht bist und Haare hast, die in alle Richtungen stehen.",
+    "active": true,
+    "category": "love"
+  },
+  {
+    "word": "två",
+    "de": "zwei",
+    "sampleSv": "Vi två mot världen, det är allt jag behöver.",
+    "sampleDe": "Wir zwei gegen die Welt, das ist alles, was ich brauche.",
+    "active": true,
+    "category": "love"
+  },
+  {
+    "word": "glömmer",
+    "de": "vergessen",
+    "sampleSv": "Ditt leende får mig att glömma allt annat.",
+    "sampleDe": "Dein Lächeln lässt mich alles andere vergessen.",
+    "active": true,
+    "category": "love"
+  },
+  {
+    "word": "ställe",
+    "de": "Ort",
+    "sampleSv": "Att vara hemma hos dig känns som att vara på rätt ställe, även om vi bara äter chips och tittar på dålig TV.",
+    "sampleDe": "Bei dir zu Hause zu sein fühlt sich an wie am richtigen Ort, selbst wenn wir nur Chips essen und schlechte Serien schauen.",
+    "active": true,
+    "category": "love"
+  },
+  {
+    "word": "förstår",
+    "de": "verstehen",
+    "sampleSv": "Du förstår mig utan att jag ens behöver förklara. Det är så sällsynt och vackert.",
+    "sampleDe": "Du verstehst mich, ohne dass ich es erklären muss. Das ist so selten und wunderschön.",
+    "active": true,
+    "category": "love"
+  },
+  {
+    "word": "favoritmänniska",
+    "de": "Lieblingsmensch",
+    "sampleSv": "Du är min favoritmänniska, även när du stjäl hela filten.",
+    "sampleDe": "Du bist mein Lieblingsmensch, selbst wenn du die ganze Decke klaut.",
+    "active": true,
+    "category": "love"
+  },
+  {
+    "active": true,
+    "category": "numbers",
+    "word": "ett",
+    "de": "eins",
+    "sampleSv": "Jag har ett äpple.",
+    "sampleDe": "Ich habe einen Apfel."
+  },
+  {
+    "active": true,
+    "category": "numbers",
+    "word": "fyra",
+    "de": "vier",
+    "sampleSv": "Vi firar om fyra dagar.",
+    "sampleDe": "Wir feiern in vier Tagen."
+  },
+  {
+    "active": true,
+    "category": "numbers",
+    "word": "sex",
+    "de": "sechs",
+    "sampleSv": "Det kostar sex kronor.",
+    "sampleDe": "Es kostet sechs Kronen."
+  },
+  {
+    "active": true,
+    "category": "numbers",
+    "word": "nio",
+    "de": "neun",
+    "sampleSv": "Hon kom nio minuter för sent.",
+    "sampleDe": "Sie kam neun Minuten zu spät."
+  },
+  {
+    "active": true,
+    "category": "numbers",
+    "word": "tio",
+    "de": "zehn",
+    "sampleSv": "Räkna till tio med mig.",
+    "sampleDe": "Zähle mit mir bis zehn."
+  },
+  {
+    "active": true,
+    "category": "numbers",
+    "word": "elva",
+    "de": "elf",
+    "sampleSv": "Elva ljus lyste i fönstret.",
+    "sampleDe": "Elf Kerzen leuchteten im Fenster."
+  },
+  {
+    "active": true,
+    "category": "numbers",
+    "word": "tolv",
+    "de": "zwölf",
+    "sampleSv": "Klockan är tolv.",
+    "sampleDe": "Es ist zwölf Uhr."
+  },
+  {
+    "active": true,
+    "category": "numbers",
+    "word": "tretton",
+    "de": "dreizehn",
+    "sampleSv": "Hon fyllde tretton i somras.",
+    "sampleDe": "Sie wurde letzten Sommer dreizehn."
+  },
+  {
+    "active": true,
+    "category": "numbers",
+    "word": "fjorton",
+    "de": "vierzehn",
+    "sampleSv": "Boken har fjorton kapitel.",
+    "sampleDe": "Das Buch hat vierzehn Kapitel."
+  },
+  {
+    "active": true,
+    "category": "numbers",
+    "word": "femton",
+    "de": "fünfzehn",
+    "sampleSv": "Femton personer kom på festen.",
+    "sampleDe": "Fünfzehn Personen kamen zur Party."
+  },
+  {
+    "active": true,
+    "category": "numbers",
+    "word": "sexton",
+    "de": "sechzehn",
+    "sampleSv": "Jag tränar sexton minuter varje morgon.",
+    "sampleDe": "Ich trainiere sechzehn Minuten jeden Morgen."
+  },
+  {
+    "active": true,
+    "category": "numbers",
+    "word": "sjutton",
+    "de": "siebzehn",
+    "sampleSv": "Sjutton fåglar flög förbi.",
+    "sampleDe": "Siebzehn Vögel flogen vorbei."
+  },
+  {
+    "active": true,
+    "category": "numbers",
+    "word": "arton",
+    "de": "achtzehn",
+    "sampleSv": "Arton grader känns kallt för mig.",
+    "sampleDe": "Achtzehn Grad fühlt sich kalt für mich an."
+  },
+  {
+    "active": true,
+    "category": "numbers",
+    "word": "nitton",
+    "de": "neunzehn",
+    "sampleSv": "Nitton löv blåste in på gården.",
+    "sampleDe": "Neunzehn Blätter wehten in den Hof."
+  },
+  {
+    "active": true,
+    "category": "numbers",
+    "word": "tjugo",
+    "de": "zwanzig",
+    "sampleSv": "Vi behöver tjugo minuter till.",
+    "sampleDe": "Wir brauchen noch zwanzig Minuten."
+  },
+  {
+    "active": true,
+    "category": "island",
+    "word": "skärgård",
+    "de": "Schären",
+    "sampleSv": "Vi tog båten ut till skärgården och promenerade bland röda stugor.",
+    "sampleDe": "Wir nahmen das Boot in die Schären und spazierten zwischen roten Hütten."
+  },
+  {
+    "active": true,
+    "category": "rocks",
+    "word": "klippor",
+    "de": "Felsen",
+    "sampleSv": "Vi låg på klipporna hela eftermiddagen och lyssnade på vågorna.",
+    "sampleDe": "Wir lagen den ganzen Nachmittag auf den Felsen und lauschten den Wellen."
+  },
+  {
+    "active": true,
+    "category": "sea",
+    "word": "saltvatten",
+    "de": "Salzwasser",
+    "sampleSv": "Saltvattnet stänkte när vi hoppade i från båten tillsammans.",
+    "sampleDe": "Das Salzwasser spritzte, als wir zusammen vom Boot sprangen."
+  },
+  {
+    "active": true,
+    "category": "house",
+    "word": "stuga",
+    "de": "Hütte",
+    "sampleSv": "Vi hyrde en liten stuga vid havet för en vecka i juli.",
+    "sampleDe": "Wir mieteten eine kleine Hütte am Meer für eine Woche im Juli."
+  },
+  {
+    "active": true,
+    "category": "summer",
+    "word": "midsommar",
+    "de": "Mittsommer",
+    "sampleSv": "Midsommar dansade vi runt stången och åt jordgubbar tillsammans.",
+    "sampleDe": "Zu Mittsommer tanzten wir um den Maibaum und aßen gemeinsam Erdbeeren."
+  },
+  {
+    "active": true,
+    "category": "coffee",
+    "word": "fika",
+    "de": "Kaffeepause",
+    "sampleSv": "Vi tog en sen fika på bryggan när solen försvann bakom horisonten.",
+    "sampleDe": "Wir machten einen späten Fika auf dem Steg, als die Sonne hinter dem Horizont verschwand."
+  },
+  {
+    "active": true,
+    "category": "lesbian",
+    "word": "flickvän",
+    "de": "Freundin",
+    "sampleSv": "Min flickvän och jag plockade blåbär och skrattade hela dagen.",
+    "sampleDe": "Meine Freundin und ich pflückten Blaubeeren und lachten den ganzen Tag."
+  },
+  {
+    "active": true,
+    "category": "love",
+    "word": "solnedgång",
+    "de": "Sonnenuntergang",
+    "sampleSv": "Vi kysstes i solnedgången vid fyrens fot.",
+    "sampleDe": "Wir küssten uns im Sonnenuntergang am Fuße des Leuchtturms."
+  },
+  {
+    "active": true,
+    "category": "sea",
+    "word": "färja",
+    "de": "Fähre",
+    "sampleSv": "Färjan doftade diesel och kaffe medan vi höll varandras händer på däck.",
+    "sampleDe": "Die Fähre roch nach Diesel und Kaffee, während wir auf dem Deck Händchen hielten."
+  },
+  {
+    "active": true,
+    "category": "summer",
+    "word": "sill",
+    "de": "Hering",
+    "sampleSv": "Vi åt inlagd sill och potatis på en solvarm brygga.",
+    "sampleDe": "Wir aßen eingelegten Hering und Kartoffeln auf einem sonnenwarmen Steg."
+  },
+  {
+    "active": true,
+    "category": "sauna",
+    "word": "bastu",
+    "de": "Sauna",
+    "sampleSv": "Efter en dag i regnet satt vi i bastun och delade varma historier.",
+    "sampleDe": "Nach einem Regentag saßen wir in der Sauna und teilten warme Geschichten."
+  },
+  {
+    "active": true,
+    "category": "lighthouse",
+    "word": "fyr",
+    "de": "Leuchtturm",
+    "sampleSv": "Fyrens ljus blinkade medan vi smög omkring på klipporna på natten.",
+    "sampleDe": "Das Licht des Leuchtturms blinkte, während wir nachts auf den Klippen umher schlichen."
+  },
+  {
+    "active": true,
+    "category": "love",
+    "word": "tillsammans",
+    "de": "zusammen",
+    "sampleSv": "Tillsammans i sommarstugan kändes allting enklare och varmare.",
+    "sampleDe": "Zusammen in der Sommerhütte fühlte sich alles einfacher und wärmer an."
+  }
+]

@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Notion Word Widget</title>
+  <link rel="stylesheet" href="words.css" />
+</head>
+
+<body>
+  <div class="notion-widget">
+    <div class="widget-header"><span class="sparkle">💕</span>&nbsp;&nbsp;Ett ord för dig&nbsp;<span
+        class="sparkle">💕</span></div>
+
+    <div class="cards">
+      <!-- Single full-width Word card (front: Swedish, back: German + samples) -->
+      <div class="flip-card" data-role="word" tabindex="0">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <div class="badge">Dagens ord</div>
+            <div class="word">—</div>
+            <div class="sample">—</div>
+          </div>
+          <div class="flip-card-back">
+            <div class="badge">Deutsch</div>
+            <div class="word">—</div>
+            <div class="sample">—</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="media-row">
+      <div class="image-placeholder">
+        <img id="word-image" src="img/word-placeholder.svg" alt="placeholder image" />
+      </div>
+      <div class="controls">
+        <button id="play-word" class="play">Hear it <span class="btn-heart">❤</span></button>
+      </div>
+    </div>
+
+    <audio id="audio-player-word" preload="none"></audio>
+
+    <script src="words.js"></script>
+</body>
+
+</html>
