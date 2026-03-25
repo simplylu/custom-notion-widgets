@@ -1,4 +1,39 @@
 document.addEventListener('DOMContentLoaded', async () => {
+  // Authorization: require ?pw= to match SHA-256 of known secret.
+  async function checkPwAuthorized() {
+    try {
+      const pw = new URLSearchParams(location.search).get('pw') || '';
+      const enc = new TextEncoder().encode(pw);
+      const buf = await crypto.subtle.digest('SHA-256', enc);
+      const hex = Array.from(new Uint8Array(buf))
+        .map((b) => b.toString(16).padStart(2, '0'))
+        .join('');
+      return (
+        hex ===
+        '8e9b3a0484ea612857971ba73f947471eb7f4ff33ae23adb0605a20629480e75'
+      );
+    } catch (e) {
+      return false;
+    }
+  }
+
+  const _authorized = await checkPwAuthorized();
+  if (!_authorized) {
+    // Render a fixed, non-flipping Unauthorized card that preserves widget size/background
+    const widget = document.querySelector('.notion-widget') || document.body;
+    widget.innerHTML = `
+      <div style="width:100%;height:160px;padding:12px;border-radius:14px;display:flex;align-items:center;justify-content:center;">
+        <div style="font-size:28px;font-weight:800;color:#b00020">Unauthorized</div>
+      </div>
+    `;
+    // ensure audio controls are not present
+    const playBtn = widget.querySelector('#play-word');
+    if (playBtn) playBtn.style.display = 'none';
+    const player = widget.querySelector('#audio-player-word');
+    if (player) player.removeAttribute('src');
+    // stop further initialization
+    return;
+  }
   // audio elements and control buttons
   const wordPlayer = document.getElementById('audio-player-word');
   const btnWord = document.getElementById('play-word');
