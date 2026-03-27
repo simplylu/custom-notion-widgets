@@ -43,7 +43,43 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   function pickRandom(arr) { return arr[Math.floor(Math.random() * arr.length)]; }
 
-  async function loadEntry() {
+  // Build category select options from the full words.json data.
+  function buildCategorySelect(data) {
+    try {
+      const counts = {};
+      data.forEach((d) => {
+        const c = (d.category || 'uncategorized') + '';
+        counts[c] = (counts[c] || 0) + 1;
+      });
+      const select = document.getElementById('category-select');
+      if (!select) return;
+      // keep only categories that appear at least 5 times
+      const cats = Object.keys(counts).filter((c) => counts[c] >= 5).sort();
+      // remember previous selection and rebuild options (keep 'all')
+      const prev = select.value || 'all';
+      select.innerHTML = '';
+      const allOpt = document.createElement('option');
+      allOpt.value = 'all';
+      allOpt.textContent = 'All';
+      select.appendChild(allOpt);
+      cats.forEach((c) => {
+        const opt = document.createElement('option');
+        opt.value = c;
+        opt.textContent = c;
+        select.appendChild(opt);
+      });
+      // restore previous selection if still available
+      const hasPrev = Array.from(select.options).some((o) => o.value === prev);
+      select.value = hasPrev ? prev : 'all';
+    } catch (err) { /* ignore */ }
+  }
+
+  function getSelectedCategory() {
+    const sel = document.getElementById('category-select');
+    return sel ? sel.value || 'all' : 'all';
+  }
+
+  async function loadEntry(category = 'all') {
     // default empty entry; rely solely on words.json
     let entry = { word: '', de: '', sampleSv: '', sampleDe: '' };
     try {
@@ -51,11 +87,17 @@ document.addEventListener('DOMContentLoaded', async () => {
       if (res.ok) {
         const data = await res.json();
         if (Array.isArray(data) && data.length) {
-          const activeOnly = data.filter((d) => d.active);
+          // build category select once from the dataset
+          buildCategorySelect(data);
+          // filter active entries
+          let activeOnly = data.filter((d) => d.active);
+          if (category && category !== 'all') {
+            activeOnly = activeOnly.filter((d) => (d.category || '') === category);
+          }
           if (activeOnly && activeOnly.length) {
             entry = pickRandom(activeOnly);
           } else {
-            console.debug('No active entries in words.json; no entry selected');
+            console.debug('No active entries matching category in words.json; no entry selected', category);
           }
         }
       }
@@ -164,10 +206,22 @@ document.addEventListener('DOMContentLoaded', async () => {
     pickAudioFile();
   }
 
-  // initial load
+  // initial load and wire category select
   (async () => {
-    const first = await loadEntry();
+    const first = await loadEntry(getSelectedCategory());
     applyEntryToDOM(first);
+    const sel = document.getElementById('category-select');
+    if (sel) {
+      sel.addEventListener('change', async () => {
+        try {
+          sel.disabled = true;
+          const next = await loadEntry(getSelectedCategory());
+          applyEntryToDOM(next);
+        } finally {
+          sel.disabled = false;
+        }
+      });
+    }
   })();
   // Build a normalized filename for the word audio (e.g. kärlek -> karlek.mp3)
   function sanitizeFilename(name) {
@@ -287,7 +341,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     reloadBtn.addEventListener('click', async () => {
       try {
         reloadBtn.disabled = true;
-        const next = await loadEntry();
+        const next = await loadEntry(getSelectedCategory());
         applyEntryToDOM(next);
       } finally {
         reloadBtn.disabled = false;

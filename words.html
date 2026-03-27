@@ -10,8 +10,14 @@
 
 <body>
   <div class="notion-widget">
-    <div class="widget-header"><span class="sparkle">💕</span>&nbsp;&nbsp;Ett ord för dig&nbsp;<span
-        class="sparkle">💕</span></div>
+    <div class="widget-header">
+      <div class="header-left"><span class="sparkle">💕</span>&nbsp;&nbsp;Ett ord för dig&nbsp;<span class="sparkle">💕</span></div>
+      <div class="header-right">
+        <select id="category-select" aria-label="Välj kategori">
+          <option value="all">All</option>
+        </select>
+      </div>
+    </div>
 
     <div class="cards">
       <!-- Single full-width Word card (front: Swedish, back: German + samples) -->

@@ -7,7 +7,16 @@
 *{box-sizing:border-box;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial}
 .body-no-bg, body{display:flex;align-items:center;justify-content:center;padding:24px}
 .notion-widget{width:360px;background:linear-gradient(180deg,var(--pink-1),#fff);border-radius:18px;padding:18px;box-shadow:0 10px 30px rgba(255,77,139,0.15);border:1px solid rgba(255,77,139,0.08)}
-.widget-header{font-weight:700;color:var(--accent);font-size:18px;margin-bottom:12px;display:flex;align-items:center;justify-content:center}
+.widget-header{font-weight:700;color:var(--accent);font-size:18px;margin-bottom:12px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.widget-header .header-left{display:flex;align-items:center;gap:8px;white-space:nowrap;flex:1;min-width:0;overflow:hidden}
+.widget-header .header-right{display:flex;align-items:center;flex:0 0 auto}
+.widget-header select#category-select{background:transparent;border:1px solid rgba(255,77,139,0.12);padding:6px 8px;border-radius:8px;color:var(--accent);font-weight:700;max-width:120px;overflow:hidden;text-overflow:ellipsis}
+
+/* Prevent the header text from wrapping; on small screens reduce font-size to keep layout */
+@media (max-width:420px){
+  .widget-header{font-size:16px}
+  .widget-header select#category-select{max-width:88px;padding:5px 6px}
+}
 .sparkle{margin-left:8px}
 .cards{display:block}
 .flip-card{width:100%;height:160px;perspective:1000px;cursor:pointer;position:relative}
