@@ -806,5 +806,509 @@
     "de": "zusammen",
     "sampleSv": "Tillsammans i sommarstugan kändes allting enklare och varmare.",
     "sampleDe": "Zusammen in der Sommerhütte fühlte sich alles einfacher und wärmer an."
+  },
+  {
+    "word": "buss",
+    "de": "Bus",
+    "sampleSv": "Vilken buss ska jag ta för att komma till Triangeln?",
+    "sampleDe": "Welchen Bus soll ich nehmen, um zum Triangeln zu kommen?",
+    "active": true,
+    "category": "daily"
+  },
+  {
+    "word": "kort",
+    "de": "Karte",
+    "sampleSv": "Kan jag betala med kort här, eller behöver jag kontanter?",
+    "sampleDe": "Kann ich hier mit Karte bezahlen oder brauche ich Bargeld?",
+    "active": true,
+    "category": "daily"
+  },
+  {
+    "word": "affär",
+    "de": "Geschäft",
+    "sampleSv": "Var ligger närmaste mataffär här i området?",
+    "sampleDe": "Wo ist der nächste Supermarkt hier in der Gegend?",
+    "active": true,
+    "category": "daily"
+  },
+  {
+    "word": "kassa",
+    "de": "Kasse",
+    "sampleSv": "Var är kassan i den här butiken?",
+    "sampleDe": "Wo ist die Kasse in diesem Laden?",
+    "active": true,
+    "category": "daily"
+  },
+  {
+    "word": "pengar",
+    "de": "Geld",
+    "sampleSv": "Jag glömde mina pengar hemma, kan jag betala senare?",
+    "sampleDe": "Ich habe mein Geld zu Hause vergessen, kann ich später bezahlen?",
+    "active": true,
+    "category": "daily"
+  },
+  {
+    "word": "tåg",
+    "de": "Zug",
+    "sampleSv": "När går nästa tåg till Köpenhamn från här?",
+    "sampleDe": "Wann fährt der nächste Zug nach Kopenhagen von hier?",
+    "active": true,
+    "category": "daily"
+  },
+  {
+    "word": "station",
+    "de": "Station",
+    "sampleSv": "Var är närmaste tågstation här i närheten?",
+    "sampleDe": "Wo ist der nächste Bahnhof hier in der Nähe?",
+    "active": true,
+    "category": "daily"
+  },
+  {
+    "word": "kvitto",
+    "de": "Quittung",
+    "sampleSv": "Kan jag få ett kvitto, tack?",
+    "sampleDe": "Kann ich bitte eine Quittung haben?",
+    "active": true,
+    "category": "daily"
+  },
+  {
+    "word": "påse",
+    "de": "Tüte",
+    "sampleSv": "Kan jag få en påse, tack? Det ser ut att regna.",
+    "sampleDe": "Kann ich bitte eine Tüte haben? Es sieht nach Regen aus.",
+    "active": true,
+    "category": "daily"
+  },
+  {
+    "word": "öppettider",
+    "de": "Öffnungszeiten",
+    "sampleSv": "Vilka är era öppettider på lördagar?",
+    "sampleDe": "Was sind eure Öffnungszeiten samstags?",
+    "active": true,
+    "category": "daily"
+  },
+  {
+    "word": "toalett",
+    "de": "Toilette",
+    "sampleSv": "Var är toaletten här, tack?",
+    "sampleDe": "Wo ist hier die Toilette, bitte?",
+    "active": true,
+    "category": "daily"
+  },
+  {
+    "word": "vatten",
+    "de": "Wasser",
+    "sampleSv": "Kan jag få ett glas vatten, tack?",
+    "sampleDe": "Kann ich bitte ein Glas Wasser haben?",
+    "active": true,
+    "category": "daily"
+  },
+  {
+    "word": "karta",
+    "de": "Karte",
+    "sampleSv": "Har ni en karta över Malmö att ge bort?",
+    "sampleDe": "Haben Sie eine Karte von Malmö, die Sie mir geben können?",
+    "active": true,
+    "category": "daily"
+  },
+  {
+    "word": "hjälp",
+    "de": "Hilfe",
+    "sampleSv": "Kan jag få lite hjälp, tack? Jag har gått vilse.",
+    "sampleDe": "Kann ich bitte etwas Hilfe haben? Ich habe mich verlaufen.",
+    "active": true,
+    "category": "daily"
+  },
+  {
+    "word": "tid",
+    "de": "Zeit",
+    "sampleSv": "Ursäkta, hur mycket är klockan?",
+    "sampleDe": "Entschuldigung, wie spät ist es?",
+    "active": true,
+    "category": "daily"
+  },
+  {
+    "word": "väg",
+    "de": "Weg",
+    "sampleSv": "Kan du visa mig vägen till Folkets Park?",
+    "sampleDe": "Kannst du mir den Weg zum Folkets Park zeigen?",
+    "active": true,
+    "category": "daily"
+  },
+  {
+    "word": "meny",
+    "de": "Speisekarte",
+    "sampleSv": "Kan jag få se menyn, tack?",
+    "sampleDe": "Kann ich bitte die Speisekarte sehen?",
+    "active": true,
+    "category": "daily"
+  },
+  {
+    "word": "räkning",
+    "de": "Rechnung",
+    "sampleSv": "Kan jag få räkningen, tack?",
+    "sampleDe": "Kann ich bitte die Rechnung haben?",
+    "active": true,
+    "category": "daily"
+  },
+  {
+    "word": "bok",
+    "de": "Buch",
+    "sampleSv": "Var kan jag köpa böcker på svenska här?",
+    "sampleDe": "Wo kann ich hier Bücher auf Schwedisch kaufen?",
+    "active": true,
+    "category": "daily"
+  },
+  {
+    "word": "kaffe",
+    "de": "Kaffee",
+    "sampleSv": "Var kan jag få ett bra kaffe här i närheten?",
+    "sampleDe": "Wo kann ich hier in der Nähe einen guten Kaffee bekommen?",
+    "active": true,
+    "category": "daily"
+  },
+  {
+    "word": "mjölk",
+    "de": "Milch",
+    "sampleSv": "Har ni havremjölk här, eller bara komjölk?",
+    "sampleDe": "Haben Sie hier Hafermilch oder nur Kuhmilch?",
+    "active": true,
+    "category": "daily"
+  },
+  {
+    "word": "bröd",
+    "de": "Brot",
+    "sampleSv": "Var kan jag köpa fräscht bröd här i området?",
+    "sampleDe": "Wo kann ich hier in der Gegend frisches Brot kaufen?",
+    "active": true,
+    "category": "daily"
+  },
+  {
+    "word": "busskort",
+    "de": "Busfahrkarte",
+    "sampleSv": "Var kan jag köpa ett busskort här i Malmö?",
+    "sampleDe": "Wo kann ich hier in Malmö eine Busfahrkarte kaufen?",
+    "active": true,
+    "category": "daily"
+  },
+  {
+    "word": "hållplats",
+    "de": "Haltestelle",
+    "sampleSv": "Var är närmaste busshållplats här?",
+    "sampleDe": "Wo ist die nächste Bushaltestelle hier?",
+    "active": true,
+    "category": "daily"
+  },
+  {
+    "word": "tidtabell",
+    "de": "Fahrplan",
+    "sampleSv": "Var kan jag hitta tidtabellen för bussarna här?",
+    "sampleDe": "Wo finde ich den Fahrplan für die Busse hier?",
+    "active": true,
+    "category": "daily"
+  },
+  {
+    "word": "biljett",
+    "de": "Ticket",
+    "sampleSv": "Hur mycket kostar en biljett till Köpenhamn?",
+    "sampleDe": "Wie viel kostet ein Ticket nach Kopenhagen?",
+    "active": true,
+    "category": "daily"
+  },
+  {
+    "word": "butik",
+    "de": "Laden",
+    "sampleSv": "Är den här butiken öppen på söndagar?",
+    "sampleDe": "Ist dieser Laden sonntags geöffnet?",
+    "active": true,
+    "category": "daily"
+  },
+  {
+    "word": "öppet",
+    "de": "offen",
+    "sampleSv": "Är ni öppna imorgon, eller stängt?",
+    "sampleDe": "Sind Sie morgen geöffnet oder geschlossen?",
+    "active": true,
+    "category": "daily"
+  },
+  {
+    "word": "stängt",
+    "de": "geschlossen",
+    "sampleSv": "Nej, vi är stängda på måndagar.",
+    "sampleDe": "Nein, wir sind montags geschlossen.",
+    "active": true,
+    "category": "daily"
+  },
+  {
+    "word": "park",
+    "de": "Park",
+    "sampleSv": "Var ligger närmaste park här?",
+    "sampleDe": "Wo ist der nächste Park hier?",
+    "active": true,
+    "category": "daily"
+  },
+  {
+    "word": "gata",
+    "de": "Straße",
+    "sampleSv": "Vilken gata ska jag gå på för att komma till Lilla Torg?",
+    "sampleDe": "Welche Straße muss ich nehmen, um zum Lilla Torg zu kommen?",
+    "active": true,
+    "category": "daily"
+  },
+  {
+    "word": "applikation",
+    "de": "App",
+    "sampleSv": "Vilken applikation använder man för att hyra cyklar här?",
+    "sampleDe": "Welche App benutzt man hier, um Fahrräder zu mieten?",
+    "active": true,
+    "category": "daily"
+  },
+  {
+    "word": "laddare",
+    "de": "Ladegerät",
+    "sampleSv": "Har ni en laddare jag kan låna? Min telefon är urladdad.",
+    "sampleDe": "Haben Sie ein Ladegerät, das ich leihen kann? Mein Handy ist leer.",
+    "active": true,
+    "category": "daily"
+  },
+  {
+    "word": "wifi",
+    "de": "WLAN",
+    "sampleSv": "Vad är wifilösenordet här, tack?",
+    "sampleDe": "Was ist das WLAN-Passwort hier, bitte?",
+    "active": true,
+    "category": "daily"
+  },
+  {
+    "word": "återvinning",
+    "de": "Recycling",
+    "sampleSv": "Var ska jag slänga glasförpackningar för återvinning här?",
+    "sampleDe": "Wo soll ich hier Glasverpackungen fürs Recycling wegwerfen?",
+    "active": true,
+    "category": "daily"
+  },
+  {
+    "word": "brev",
+    "de": "Brief",
+    "sampleSv": "Jag behöver skicka ett brev, var kan jag göra det?",
+    "sampleDe": "Ich muss einen Brief verschicken, wo kann ich das machen?",
+    "active": true,
+    "category": "daily"
+  },
+  {
+    "word": "bankomat",
+    "de": "Geldautomat",
+    "sampleSv": "Var är närmaste bankomat här?",
+    "sampleDe": "Wo ist der nächste Geldautomat hier?",
+    "active": true,
+    "category": "daily"
+  },
+  {
+    "word": "swish",
+    "de": "Swish (Mobile Payment)",
+    "sampleSv": "Kan jag betala med Swish här?",
+    "sampleDe": "Kann ich hier mit Swish bezahlen?",
+    "active": true,
+    "category": "daily"
+  },
+  {
+    "word": "bulle",
+    "de": "Brötchen/Süßteilchen",
+    "sampleSv": "Har ni några veganska bullar här?",
+    "sampleDe": "Haben Sie hier vegane Süßteilchen?",
+    "active": true,
+    "category": "daily"
+  },
+  {
+    "word": "servering",
+    "de": "Bedienung",
+    "sampleSv": "Är det servering här, eller ska man beställa vid disken?",
+    "sampleDe": "Gibt es hier Bedienung oder soll man an der Theke bestellen?",
+    "active": true,
+    "category": "daily"
+  },
+  {
+    "word": "bord",
+    "de": "Tisch",
+    "sampleSv": "Kan vi få ett bord för två, tack?",
+    "sampleDe": "Können wir bitte einen Tisch für zwei haben?",
+    "active": true,
+    "category": "daily"
+  },
+  {
+    "word": "dricka",
+    "de": "Getränk",
+    "sampleSv": "Vad kan ni rekommendera för dricka här?",
+    "sampleDe": "Was können Sie hier für Getränke empfehlen?",
+    "active": true,
+    "category": "daily"
+  },
+  {
+    "word": "kran",
+    "de": "Wasserhahn",
+    "sampleSv": "Var är närmaste kranen där jag kan fylla min vattenflaska?",
+    "sampleDe": "Wo ist der nächste Wasserhahn, an dem ich meine Wasserflasche auffüllen kann?",
+    "active": true,
+    "category": "daily"
+  },
+  {
+    "word": "cykelparkering",
+    "de": "Fahrradparkplatz",
+    "sampleSv": "Var är närmaste cykelparkering här?",
+    "sampleDe": "Wo ist der nächste Fahrradparkplatz hier?",
+    "active": true,
+    "category": "daily"
+  },
+  {
+    "word": "hjälm",
+    "de": "Helm",
+    "sampleSv": "Behöver jag ha hjälm när jag cyklar här?",
+    "sampleDe": "Muss ich hier einen Helm tragen, wenn ich Fahrrad fahre?",
+    "active": true,
+    "category": "daily"
+  },
+  {
+    "word": "pump",
+    "de": "Luftpumpe",
+    "sampleSv": "Var kan jag hitta en pump för min cykel här?",
+    "sampleDe": "Wo finde ich hier eine Luftpumpe für mein Fahrrad?",
+    "active": true,
+    "category": "daily"
+  },
+  {
+    "word": "ljus",
+    "de": "Licht",
+    "sampleSv": "Var kan jag köpa cykelljus här?",
+    "sampleDe": "Wo kann ich hier Fahrradlichter kaufen?",
+    "active": true,
+    "category": "daily"
+  },
+  {
+    "word": "reflektor",
+    "de": "Reflektor",
+    "sampleSv": "Behöver jag ha reflektorer på min cykel här?",
+    "sampleDe": "Muss ich hier Reflektoren an meinem Fahrrad haben?",
+    "active": true,
+    "category": "daily"
+  },
+  {
+    "word": "reskort",
+    "de": "Reisekarte",
+    "sampleSv": "Hur köper jag ett reskort för en månad här?",
+    "sampleDe": "Wie kaufe ich hier eine Monatskarte für den Nahverkehr?",
+    "active": true,
+    "category": "daily"
+  },
+  {
+    "word": "studentrabatt",
+    "de": "Studentenrabatt",
+    "sampleSv": "Får jag studentrabatt på busskortet här?",
+    "sampleDe": "Bekomme ich hier Studentenrabatt auf die Busfahrkarte?",
+    "active": true,
+    "category": "daily"
+  },
+  {
+    "word": "försening",
+    "de": "Verspätung",
+    "sampleSv": "Är det några förseningar på bussarna idag?",
+    "sampleDe": "Gibt es heute Verspätungen bei den Bussen?",
+    "active": true,
+    "category": "daily"
+  },
+  {
+    "word": "byte",
+    "de": "Umstieg",
+    "sampleSv": "Var ska jag byta buss för att komma till Rosengård?",
+    "sampleDe": "Wo muss ich umsteigen, um nach Rosengård zu kommen?",
+    "active": true,
+    "category": "daily"
+  },
+  {
+    "word": "slutstation",
+    "de": "Endstation",
+    "sampleSv": "Vilken är slutstationen för den här bussen?",
+    "sampleDe": "Was ist die Endstation für diesen Bus?",
+    "active": true,
+    "category": "daily"
+  },
+  {
+    "word": "nattbuss",
+    "de": "Nachtbus",
+    "sampleSv": "Går det några nattbussar från centrum till Västra Hamnen?",
+    "sampleDe": "Fahren Nachtbusse vom Zentrum nach Västra Hamnen?",
+    "active": true,
+    "category": "daily"
+  },
+  {
+    "word": "cykelbana",
+    "de": "Fahrradweg",
+    "sampleSv": "Var är närmaste cykelbana här?",
+    "sampleDe": "Wo ist der nächste Fahrradweg hier?",
+    "active": true,
+    "category": "daily"
+  },
+  {
+    "word": "gågata",
+    "de": "Fußgängerzone",
+    "sampleSv": "Är det här en gågata, eller får man cykla?",
+    "sampleDe": "Ist das hier eine Fußgängerzone oder darf man Fahrrad fahren?",
+    "active": true,
+    "category": "daily"
+  },
+  {
+    "word": "omväg",
+    "de": "Umweg",
+    "sampleSv": "Finns det någon omväg om den här vägen är stängd?",
+    "sampleDe": "Gibt es einen Umweg, falls diese Straße gesperrt ist?",
+    "active": true,
+    "category": "daily"
+  },
+  {
+    "word": "avstängd",
+    "de": "gesperrt",
+    "sampleSv": "Är den här vägen avstängd just nu?",
+    "sampleDe": "Ist diese Straße gerade gesperrt?",
+    "active": true,
+    "category": "daily"
+  },
+  {
+    "word": "vägarbete",
+    "de": "Straßenarbeiten",
+    "sampleSv": "Finns det några vägarbeten här som jag bör känna till?",
+    "sampleDe": "Gibt es hier Straßenarbeiten, die ich kennen sollte?",
+    "active": true,
+    "category": "daily"
+  },
+  {
+    "word": "skylt",
+    "de": "Schild",
+    "sampleSv": "Vad betyder den här skylten här?",
+    "sampleDe": "Was bedeutet dieses Schild hier?",
+    "active": true,
+    "category": "daily"
+  },
+  {
+    "word": "polisanmälan",
+    "de": "Polizeianzeige",
+    "sampleSv": "Måste jag göra en polisanmälan om min bil blir stulen?",
+    "sampleDe": "Muss ich eine Polizeianzeige machen, wenn mein Auto gestohlen wird?",
+    "active": true,
+    "category": "daily"
+  },
+  {
+    "word": "nyckel",
+    "de": "Schlüssel",
+    "sampleSv": "Jag har tappat bort min nyckel, vad ska jag göra?",
+    "sampleDe": "Ich habe meinen Schlüssel verloren, was soll ich tun?",
+    "active": true,
+    "category": "daily"
+  },
+  {
+    "word": "kreditkort",
+    "de": "Kreditkarte",
+    "sampleSv": "Kan jag betala med kreditkort här?",
+    "sampleDe": "Kann ich hier mit Kreditkarte bezahlen?",
+    "active": true,
+    "category": "daily"
   }
 ]
